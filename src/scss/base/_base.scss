@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Condiment&display=swap');
+
+// font-family: 'Exo 2', sans-serif;
+// font-family: 'Condiment', cursive;
+
+body{
+    font-family: $font-main;
+    background-color: $background-color;
+    color: $dark;
+    font-weight: $font-weight;
+    font-size: 32px;
+    letter-spacing: 0.2px;
+}
+a{
+    color: $white;
+    transition: all 0.2s ease-in;
+    &:hover{
+        color: $orange;
+    }
+}
+.container {
+    width: 97vw;
+    margin: 0 auto;
+}

@@ -1,0 +1,81 @@
+.main-scrin{
+    width: 100%;
+    height: calc(100vh);
+    padding-top: 1vh;
+    display: flex;
+    justify-content: column;
+    background-image: url("/src/img/header-bg.jpg"); 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-position: center;
+    .main-container{
+        margin: 0 auto;
+        width: 97vw;
+        .header-main{
+            width: 95vw;
+            margin: 0 auto;
+            height: 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .logo{
+                font-family: 'Condiment', cursive;;
+                font-size: $heading;
+                font-weight: 200;
+            }
+            .menu{
+                list-style: none;
+                display: flex;
+                gap: 7vw;
+                justify-content: space-between;
+                align-items: center;
+                font-size: $paragraph;
+            }
+            .sign-in{
+                border: none;
+                font-size: $paragraph;
+                background-color: rgba($color: $white, $alpha: 0.0);
+                color: $white;
+                font-weight: $font-weight;
+
+                &:hover{
+                    color: $orange;        
+                    cursor: pointer;           
+                }
+            }
+        }
+        .main-title{
+            width: 25vw;
+            margin-top: 80px;
+            margin-left: 7vw;
+            display: flex;
+            flex-direction: column;
+            h1{
+                font-size: $heading;
+                font-weight: $font-weight;
+                color: $white;
+            }
+            p{
+                margin-top: 5vh;
+                font-size: $subtitle;
+                color: $white;
+            }
+            button{
+                margin-top: 8vh;
+                border: none;
+                background-color: $white;
+                width: 100%;
+                height: 12vh;
+                border-radius: 30px;
+                font-size: $subtitle;
+                color: $dark;
+
+                &:hover{
+                    background-color: $orange;
+                    color: $white;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

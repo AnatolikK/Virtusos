@@ -1,0 +1,27 @@
+.main-scrin-footer {
+    width: 100%;
+    background-color: $dark;
+    padding: 30px 0px;
+    img{
+        width: 40px;
+        height: 40px;
+    }
+    .main-container-footer {
+        margin: 0 auto;
+        width: 97%;
+        .footer-main {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .menu, .social{
+                list-style: none;
+                display: flex;
+                gap: 7vw;
+                justify-content: space-around;
+                align-items: center;
+                font-size: $paragraph;
+            }
+
+        }
+    }
+}

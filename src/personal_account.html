@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Личный кабинет</title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <div class="main-scrin-header-white">
+      <div class="main-container">
+        <header class="header-main">
+          <div class="logo"><a href="#">Virtuoos</a></div>
+          <nav class="menu">
+            <li><a href="#">Услуги</a></li>
+            <li><a href="#">Акции</a></li>
+            <li><a href="#">Отзывы</a></li>
+            <li><a href="#">Контакты</a></li>
+          </nav>
+          <button class="sign-in">Личный кабинет</button>
+        </header>
+      </div>
+    </div>
+    <div class="container">
+        <div class="tabs">
+            <div class="tabs-nav">
+                <button class="tabs-nav-btn active" type="button" data-tab="#tab_1">Профиль</button>
+                <button class="tabs-nav-btn" type="button" data-tab="#tab_2">Заявки</button>
+            </div>
+            <div class="tabs-content">
+                <div class="tabs-item active" id="tab_1">
+                    <div class="personal-info-and-newsletter">
+                        <div class="personal-info">
+                            <p>Персональная информация</p>
+                            <form action="">
+                                <input type="text" value="Фамилия">
+                                <input type="text" value="Имя">
+                                <input type="text" value="Отчество">
+                                <input type="radio" id="men" name="gender"> <label for="men">Мужской</label>
+                                <input type="radio" id="women" name="gender"> <label for="women">Женский</label>
+                                <input type="text" value="Номер телефона">
+                                <input type="text" value="Электронная почта">
+                            </form>
+                        </div>
+                        <div class="newsletter">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tabs-item" id="tab_2">
+                    <p> necessitatibus aliquam. Debitis quia ipsam in, necessitatibus mollitia 
+                        architecto exercitationem reiciendis dolorem.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/tabs.js"></script>
+  </body>
+</html>

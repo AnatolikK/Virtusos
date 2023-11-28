@@ -1,0 +1,135 @@
+.container-about {
+    a:hover{
+        color: $white;
+    }
+    h4{
+        font-weight: $font-weight;
+        font-size: $heading;
+        margin-bottom: 40px;
+    }
+    .about-programm {
+        display: grid;
+        margin: 0 auto;
+        grid-template-rows: 350px 350px 150px;
+        grid-template-columns: repeat(4,1fr);
+        gap: 20px;
+        grid-template-areas: 
+            "wide1 wide1 wide2 wide2"
+            "wide1 wide1 wide3 wide4"
+            "wide5 wide5 wide5 wide5";
+        .programm-card {
+            border-radius: 20px;
+            padding: 10px;
+        }
+
+        .personal-account {
+            grid-area: wide1;
+            font-weight: $font-weight;
+            font-size: 20px;
+            display: flex;
+            flex-direction: column;
+            background-color: $dark;
+            .paragraff-personal-account {
+                font-weight: $font-weight;
+                font-size: $heading;
+                display: inline;
+            }
+            img{
+                width: 84.5%;
+                position: relative;
+                top: -25%;
+                right: -17%;
+            }
+            button{
+                position: relative;
+                top:  -50%;
+                width: 55%;
+                font-size: $paragraph;
+                padding: 25px;
+                background-color: $white;
+                border-radius: 20px;
+                cursor: pointer;
+                &:hover{
+                    background-color: $mint;
+                }
+            }
+        }
+
+        .bonus {
+            grid-area: wide2;
+            display: flex;
+            background-color: $mint;
+            .programm-bonus {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                color: $dark;
+                font-size: 20px;
+                .paragraf-programm-bonus{
+                    font-weight: $font-weight;
+                    font-size: $heading;
+                }
+            }
+            img{
+                width: 80%;
+            }
+            &:hover{
+                background-color: $orange;
+            }
+        }
+        .card-reviews {
+            grid-area: wide3;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: $gray;
+            color: $dark;
+            font-size: $heading;
+            .programm-reviews {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-size: $paragraph;
+            }
+            &:hover{
+                background-color: $mint;
+            }
+        }
+        .contact {
+            grid-area: wide4;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: $gray;
+            color: $dark;
+            font-size: $heading;
+            .programm-contact {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-size: $paragraph;
+            }
+            &:hover{
+                background-color: $orange;
+            }
+        }
+        .calculator {
+            grid-area: wide5;
+            width: 100%;
+            background-color: $orange;
+            color: $white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 50px;
+            height: 150px;
+            &:hover{
+                background-color: $mint;
+                color: $dark;
+            }
+        }
+    }   
+}
+

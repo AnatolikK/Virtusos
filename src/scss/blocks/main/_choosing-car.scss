@@ -1,0 +1,38 @@
+.container-choosing-car{
+    height: 100vh;
+    h2{
+        padding-top: 40px;
+        padding-bottom: 20px;
+        font-size: $heading;
+        color: $dark;
+        font-weight: $font-weight;
+    }
+    .choosing-car {
+        margin: 0 auto;
+        display: grid;
+        grid-template-rows: repeat(2,1fr);
+        grid-template-columns: repeat(3,1fr);
+        gap: 20px;
+        .car-model{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: $white;
+            padding-bottom: 40px;
+            border-radius: 30px;
+            cursor: pointer;
+            img{
+                width: 30vw;
+            }
+            p{
+                margin-top: -20px;
+                font-size: $paragraph;
+                text-transform: uppercase;
+            }
+            &:hover{
+                background-color: $orange;
+                color: $white;
+            }
+        }
+    }
+}

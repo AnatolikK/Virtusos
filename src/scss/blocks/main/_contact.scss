@@ -1,0 +1,83 @@
+.container-contact {
+    display: flex;
+    flex-direction: row;
+    height: 60vh;
+    padding-bottom: 80px;
+    img{
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+    }
+    .map {
+        width: 50vw;
+        padding-right: 20px;
+    }
+    .section-contact {
+        width:100%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        background-color: $white;
+        border-radius: 20px;
+        h6{
+            font-weight: $font-weight;
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+        .contact{
+            display: flex;
+            flex-wrap: wrap;
+
+            .contact-card{
+                font-size: 25px;
+                display: flex;
+                flex-direction: column;
+
+                .content-adress{
+                    display: flex;
+                    text-align: center;
+                    justify-content: center;
+                    flex-wrap: nowrap;
+                    margin-top: 20px;
+                }
+                .content-time-work{
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: nowrap;
+                    margin-top: 20px;
+                }
+                .content-number-email{
+                    margin-top: 20px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    .content-number{
+                        display: flex;
+                        margin-right: 13vw;
+                    }
+                    .content-email{
+                        display: flex;
+                    }
+                }
+            }
+            .address{
+                margin-right: 20px;
+            }
+            .number{
+                margin-top: 40px;
+            }
+        }
+    }
+}
+
+.contact {
+}
+.contact-card {
+}
+.address {
+}
+.time-work {
+}
+.number {
+}
+.email {
+}

@@ -1,0 +1,54 @@
+.main-scrin-header-white{
+    width: 100%;
+    height: 100px;
+    padding-top: 1vh;
+    display: flex;
+    justify-content: row;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-position: center;
+    .main-container{
+        margin: 0 auto;
+        width: 97vw;
+        .header-main{
+            width: 95vw;
+            margin: 0 auto;
+            height: 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .logo{
+                font-family: 'Condiment', cursive;;
+                font-size: $heading;
+                font-weight: 200;
+                a{
+                    color: $dark;
+                    &:hover{
+                        color: $orange;
+                    }
+                }
+            }
+            .menu{
+                list-style: none;
+                display: flex;
+                gap: 7vw;
+                justify-content: space-between;
+                align-items: center;
+                font-size: $paragraph;
+                li a{
+                    color: $dark;
+                    &:hover{
+                        color: $orange;
+                    }
+                }
+            }
+            .sign-in{
+                border: none;
+                font-size: $paragraph;
+                background-color: rgba($color: $white, $alpha: 0.0);
+                color: $orange;
+                font-weight: $font-weight;
+            }
+        }
+    }
+}

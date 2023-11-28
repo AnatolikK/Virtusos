@@ -1,0 +1,64 @@
+.container-services {
+    padding-bottom: 80px;
+    h3{
+        font-weight: $font-weight;
+        font-size: $heading;
+        padding-bottom: 40px;
+    }
+    .container-card{
+        display: grid;
+        margin: 0 auto;
+        grid-template-rows: repeat(3,1fr);
+        grid-template-columns: repeat(4,1fr);
+        gap: 20px;
+        grid-template-areas: 
+            "wide1 wide1 wide2 wide3"
+            "wide4 wide5 wide6 wide6"
+            "wide7 wide8 wide8 wide9";
+
+        .services-card{
+            border: 3px solid $dark;
+            padding: 30px;
+            border-radius: 30px;
+            font-size: $paragraph;
+            font-weight: $font-weight;
+        }
+        .photo-1{
+            grid-area: wide1;
+        }
+        .photo-2{
+            grid-area: wide2;
+        }
+        .photo-3{
+            grid-area: wide3;
+        }
+        .photo-4{
+            grid-area: wide4;
+        }
+        .photo-5{
+            grid-area: wide5;
+        }
+        .photo-6{
+            grid-area: wide6;
+        }
+        .photo-7{
+            grid-area: wide7;
+        }
+        .photo-8{
+            grid-area: wide8;
+        }
+        .span-9{
+            grid-area: wide9;
+            border-color: $orange;
+            color: $orange;
+            display: flex;
+            align-items: end;
+            .content-servise{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+    }
+}

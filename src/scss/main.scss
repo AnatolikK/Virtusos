@@ -1,0 +1,21 @@
+// Base
+@import './base/reset';
+@import './base/vars';
+@import './base/base';
+
+// Blocks
+// main
+@import './blocks/main/header';
+@import './blocks/main/choosing-car';
+@import './blocks/main/application';
+@import './blocks/main/services';
+@import './blocks/main/aboutUs';
+@import './blocks/main/reviews';
+@import './blocks/main/contact';
+@import './blocks/main/footer';
+//registration
+@import './blocks/entrance/entrans';
+@import './blocks/registration/registration';
+@import './blocks/personal_account.html/personal_account';
+
+
