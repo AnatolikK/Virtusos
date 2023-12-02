@@ -33,17 +33,69 @@
                         <div class="personal-info">
                             <p>Персональная информация</p>
                             <form action="">
-                                <input type="text" value="Фамилия">
-                                <input type="text" value="Имя">
-                                <input type="text" value="Отчество">
-                                <input type="radio" id="men" name="gender"> <label for="men">Мужской</label>
-                                <input type="radio" id="women" name="gender"> <label for="women">Женский</label>
-                                <input type="text" value="Номер телефона">
-                                <input type="text" value="Электронная почта">
+                              <div class="surname-name-div">
+                                <input type="text" placeholder="Фамилия" class="surname">
+                                <input type="text" placeholder="Имя" class="name">
+                              </div>
+                              <div class="gender-div">
+                                <div class="gender-men">
+                                  <input type="radio" id="men" name="gender" checked> <label for="men" class="men">Мужской</label>
+                                </div>
+                                <div class="gender-women">
+                                  <input type="radio" id="women" name="gender"> <label for="women">Женский</label>
+                                </div>
+                              </div>
+                              <div class="number-email-div">
+                                <input type="text" placeholder="Номер телефона" class="number">
+                                <input type="text" placeholder="Электронная почта" class="email">
+                              </div>
+                              <input type="submit" class="save-profile" value="Сохранить">
                             </form>
                         </div>
                         <div class="newsletter">
-
+                          <p class="title-newsletter">Рассылка</p>
+                          <div class="info">
+                            <div class="info-word">
+                              <p class="title-new">Полезная информация по эл. почте</p>
+                              <p>Вы будете получать эл.письма с информацией о бонусах, акциях и новых поступлениях.</p>
+                            </div>
+                            <div>
+                              <label class="toggler-wrapper style-3">
+                                <input type="checkbox" class="newsletter-1" checked>
+                                <div class="toggler-slider">
+                                  <div class="toggler-knob"></div>
+                                </div>
+                              </label>
+                            </div>
+                          </div>
+                          <div class="info">
+                            <div class="info-word">
+                              <p class="title-new">Полезная информация в мессенджере</p>
+                              <p>Вы будете получать сообщения в мессенджере с информацией о бонусах, акциях и новых поступлениях.</p>
+                            </div>
+                            <div>
+                              <label class="toggler-wrapper style-3">
+                                <input type="checkbox" class="newsletter-2" checked>
+                                <div class="toggler-slider">
+                                  <div class="toggler-knob"></div>
+                                </div>
+                              </label>
+                            </div>
+                          </div>
+                          <div class="info">
+                            <div class="info-word">
+                              <p class="title-new">Информация о процессе выполнения заявок</p>
+                              <p>Вы будете получать сообщения в мессенджере с уведомлениями о ходе выполнения заявок.</p>
+                            </div>
+                            <div>
+                              <label class="toggler-wrapper style-3">
+                                <input type="checkbox" class="newsletter-3" checked>
+                                <div class="toggler-slider">
+                                  <div class="toggler-knob"></div>
+                                </div>
+                              </label>
+                            </div>
+                          </div>
                         </div>
                     </div>
                 </div>

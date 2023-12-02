@@ -941,18 +941,179 @@ a:hover {
 }
 
 .tabs-nav {
+  margin-top: 20px;
   display: flex;
 }
 .tabs-nav .tabs-nav-btn {
   padding: 10px 30px;
-  font-size: 25px;
+  font-size: 20;
   color: #181F22;
   width: 230px;
   border-radius: 30px 30px 0px 0px;
+  font-size: 20px;
 }
 .tabs-nav .tabs-nav-btn:first-child {
   margin-left: 50px;
 }
 .tabs-nav .tabs-nav-btn.active {
   background-color: #ffffff;
+}
+
+.tabs-content {
+  font-size: 12px;
+}
+.tabs-content .tabs-item {
+  width: 100%;
+  height: 75vh;
+  background-color: #ffffff;
+  border-radius: 30px;
+}
+.tabs-content .tabs-item .personal-info-and-newsletter {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+.tabs-content .tabs-item .personal-info-and-newsletter .personal-info {
+  width: 45vw;
+  padding: 20px 0px 0px 20px;
+}
+.tabs-content .tabs-item .personal-info-and-newsletter .personal-info p {
+  font-size: 40px;
+  font-weight: 500;
+}
+.tabs-content .tabs-item .personal-info-and-newsletter .personal-info form input[type=text] {
+  width: 47%;
+  font-size: 25px;
+  border: none;
+  border-bottom: 2px solid #747474;
+  font-weight: 100;
+  color: #181F22;
+}
+.tabs-content .tabs-item .personal-info-and-newsletter .personal-info form input[type=text]::-moz-placeholder {
+  color: #181F22;
+  font-size: 25px;
+  font-weight: 100;
+  color: #747474;
+}
+.tabs-content .tabs-item .personal-info-and-newsletter .personal-info form input[type=text]::placeholder {
+  color: #181F22;
+  font-size: 25px;
+  font-weight: 100;
+  color: #747474;
+}
+.tabs-content .tabs-item .personal-info-and-newsletter .personal-info form input[type=text]:focus {
+  outline: #FF914C;
+  border-color: #FF914C;
+}
+.tabs-content .tabs-item .personal-info-and-newsletter .personal-info .surname-name-div {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.tabs-content .tabs-item .personal-info-and-newsletter .personal-info .gender-div {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 25px;
+  justify-content: space-between;
+}
+.tabs-content .tabs-item .personal-info-and-newsletter .personal-info .gender-div .gender-men, .tabs-content .tabs-item .personal-info-and-newsletter .personal-info .gender-div .gender-women {
+  display: flex;
+  align-items: center;
+}
+.tabs-content .tabs-item .personal-info-and-newsletter .personal-info .gender-div input[type=radio] {
+  height: 40px;
+  width: 50px;
+  margin-right: 10px;
+  accent-color: #62FAA9;
+}
+.tabs-content .tabs-item .personal-info-and-newsletter .personal-info .gender-div .men {
+  margin-right: 80px;
+}
+.tabs-content .tabs-item .personal-info-and-newsletter .personal-info .number-email-div {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.tabs-content .tabs-item .personal-info-and-newsletter .personal-info .save-profile {
+  margin-top: 100px;
+  width: 100%;
+  background-color: #62FAA9;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 0px;
+  font-size: 25px;
+  cursor: pointer;
+  margin-bottom: 40px;
+  box-shadow: 1px 1px 5px #181F22;
+  color: #181F22;
+}
+.tabs-content .tabs-item .personal-info-and-newsletter .personal-info .save-profile:hover {
+  background-color: #FF914C;
+  color: #ffffff;
+}
+.tabs-content .tabs-item .personal-info-and-newsletter .newsletter {
+  width: 45vw;
+  padding: 20px 20px 0px 0px;
+}
+.tabs-content .tabs-item .personal-info-and-newsletter .newsletter .title-newsletter {
+  font-size: 40px;
+  font-weight: 500;
+}
+.tabs-content .tabs-item .personal-info-and-newsletter .newsletter .info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-right: 30px;
+  margin-top: 30px;
+}
+.tabs-content .tabs-item .personal-info-and-newsletter .newsletter .info .info-word {
+  font-size: 20px;
+  width: 90%;
+}
+.tabs-content .tabs-item .personal-info-and-newsletter .newsletter .info .info-word .title-new {
+  font-size: 25px;
+}
+.tabs-content .tabs-item .personal-info-and-newsletter .newsletter .info .toggler-wrapper {
+  display: block;
+  width: 60px;
+  height: 25px;
+  cursor: pointer;
+  position: relative;
+}
+.tabs-content .tabs-item .personal-info-and-newsletter .newsletter .info .toggler-wrapper input[type=checkbox] {
+  display: none;
+}
+.tabs-content .tabs-item .personal-info-and-newsletter .newsletter .info .toggler-wrapper input[type=checkbox]:checked + .toggler-slider {
+  background-color: #C5F7DC;
+}
+.tabs-content .tabs-item .personal-info-and-newsletter .newsletter .info .toggler-wrapper .toggler-slider {
+  background-color: #ccc;
+  position: absolute;
+  border-radius: 100px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 300ms ease;
+}
+.tabs-content .tabs-item .personal-info-and-newsletter .newsletter .info .toggler-wrapper .toggler-knob {
+  position: absolute;
+  transition: all 300ms ease;
+}
+.tabs-content .tabs-item .personal-info-and-newsletter .newsletter .info .toggler-wrapper.style-3 input[type=checkbox]:checked + .toggler-slider .toggler-knob {
+  left: calc(100% - 19px - 3px);
+  background-color: #62FAA9;
+}
+.tabs-content .tabs-item .personal-info-and-newsletter .newsletter .info .toggler-wrapper.style-3 .toggler-knob {
+  width: 31px;
+  height: 31px;
+  border-radius: 50%;
+  left: -3px;
+  top: -3px;
+  background-color: #747474;
+  box-shadow: 0 2px 6px rgba(153, 153, 153, 0.75);
 }/*# sourceMappingURL=main.css.map */
