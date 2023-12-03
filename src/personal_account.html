@@ -101,12 +101,102 @@
                 </div>
 
                 <div class="tabs-item" id="tab_2">
-                    <p> necessitatibus aliquam. Debitis quia ipsam in, necessitatibus mollitia 
-                        architecto exercitationem reiciendis dolorem.</p>
+                    <div class="application">
+                      <div class="title-application">
+                        <div class="info-application">
+                          <p>№ Заявки</p>
+                          <p>Сумма</p>
+                          <p>Оформлен</p>
+                          <p>Статус</p>
+                        </div>
+                        <div class="create-application">
+                          <button>Создать заявку</button>
+                        </div>
+                      </div>
+                      <div class="application-1 created-application">
+                        <div class="info-application-1">
+                          <p>169 144 208</p>
+                          <p>34568 Р</p>
+                          <p>27 сен, пт</p>
+                          <p>В процессе</p>
+                        </div>
+                        <div class="viewing-application-1">
+                          <button class="view-application-details">Посмотреть</button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="application-details">
+                      <div class="application-details-about">
+                        <div class="number-application">
+                          <p>Заявка № <span>169 144 208</span></p>
+                        </div>
+                        <div class="personal-info-and-about-details">
+                            <div class="personal-info-application">
+                                <p>Персональная информация</p>
+                                <div class="surname-name-div">
+                                  <input type="text" class="name-application" placeholder="Имя" readonly></input>
+                                  <input type="text" class="surname-application" placeholder="Фамилия" readonly></input>
+                                </div>
+                                <div class="number-email-div-application">
+                                  <input type="tel" class="telephon-number-application" placeholder="Номер телефона" readonly></input>
+                                  <input type="email" class="email-application" placeholder="Email" readonly></input>
+                                </div>
+                                <p class="date-and-time">Дата и время</p>
+                                <div class="date-time-application">
+                                  <div class="div-date">
+                                    <label for="date-application"><img src="./icons/Календарь.png" alt=""></label>
+                                    <input type="date" class="date-application" id="date-application" placeholder="ДД.ММ.ГГ" readonly></input>
+                                  </div>
+                                  <div class="div-time">
+                                    <label for="time-application"><img src="./icons/время.png" alt=""></label>
+                                    <input type="time" class="time-application" id="time-application" placeholder="ЧЧ.ММ" readonly></input>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="about-details">
+                              <p><span>Статус: </span>Выполненно/Отмененно клиентом</p>
+                              <p><span>Тип авто: </span>Средний класс</p>
+                              <p><span>Ход работы: </span>В процессе</p>
+                              <p><span>Общая сумма: </span>34568 <span class="valute">Р</span></p>
+                              <p class="about-details-p"><span>Все выбранные услуги: </span>Подробнее</p>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+
+                      <div class="viewing-services">
+                        <div class="viewing-services-about">
+                          <div class="services-about">
+                            <p>Перебор двигателя</p>
+                            <p>15000<span>Р</span></p>
+                          </div>
+                          <div class="services-about">
+                            <p>Починить катушку</p>
+                            <p>1000<span>Р</span></p>
+                          </div>
+                          <div class="services-about">
+                            <p>Поменять колеса</p>
+                            <p>22000<span>Р</span></p>
+                          </div>
+                          <div class="services-about">
+                            <p>Перепрошить чип</p>
+                            <p>35000<span>Р</span></p>
+                          </div>
+                          <div class="services-about">
+                            <p>Отремонтировать подвеску</p>
+                            <p>30000<span>Р</span></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <script src="./js/tabs.js"></script>
+    <script src="./js/application-details.js"></script>
+    <script src="./js/viewing-services.js"></script>
+    <script src=""></script>
   </body>
 </html>

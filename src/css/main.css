@@ -957,6 +957,8 @@ a:hover {
 }
 .tabs-nav .tabs-nav-btn.active {
   background-color: #ffffff;
+  color: #FF914C;
+  border: none;
 }
 
 .tabs-content {
@@ -1116,4 +1118,161 @@ a:hover {
   top: -3px;
   background-color: #747474;
   box-shadow: 0 2px 6px rgba(153, 153, 153, 0.75);
+}
+.tabs-content .tabs-item .application {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 30px;
+}
+.tabs-content .tabs-item .application .title-application {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: 20px 60px;
+  align-items: center;
+  border-bottom: 2px solid #747474;
+}
+.tabs-content .tabs-item .application .title-application .info-application {
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+  color: #747474;
+  text-transform: uppercase;
+}
+.tabs-content .tabs-item .application .title-application .create-application button {
+  font-size: 25px;
+  font-weight: 300;
+  border: none;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+.tabs-content .tabs-item .application .title-application .create-application button:hover {
+  color: #FF914C;
+}
+.tabs-content .tabs-item .application .application-1 {
+  font-size: 25px;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: 20px 60px;
+  align-items: center;
+  border-bottom: 2px solid #747474;
+}
+.tabs-content .tabs-item .application .application-1 .info-application-1 {
+  width: 76%;
+  display: flex;
+  justify-content: space-between;
+}
+.tabs-content .tabs-item .application .application-1 .viewing-application-1 button {
+  font-size: 25px;
+  font-weight: 300;
+  border: none;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+.tabs-content .tabs-item .application .application-1 .viewing-application-1 button:hover {
+  color: #FF914C;
+}
+.tabs-content .application-details {
+  display: none;
+}
+.tabs-content .application-details .application-details-about {
+  padding: 20px;
+}
+.tabs-content .application-details .application-details-about .number-application {
+  font-size: 40px;
+  font-weight: 500;
+}
+.tabs-content .application-details .application-details-about .personal-info-and-about-details {
+  display: flex;
+  justify-content: space-between;
+}
+.tabs-content .application-details .application-details-about .personal-info-and-about-details .personal-info-application {
+  width: 50vw;
+}
+.tabs-content .application-details .application-details-about .personal-info-and-about-details .personal-info-application p {
+  font-size: 32px;
+  font-weight: 500;
+  margin-top: 30px;
+}
+.tabs-content .application-details .application-details-about .personal-info-and-about-details .personal-info-application .surname-name-div, .tabs-content .application-details .application-details-about .personal-info-and-about-details .personal-info-application .number-email-div-application, .tabs-content .application-details .application-details-about .personal-info-and-about-details .personal-info-application .date-time-application {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.tabs-content .application-details .application-details-about .personal-info-and-about-details .personal-info-application .surname-name-div input, .tabs-content .application-details .application-details-about .personal-info-and-about-details .personal-info-application .number-email-div-application input, .tabs-content .application-details .application-details-about .personal-info-and-about-details .personal-info-application .date-time-application input {
+  font-size: 25px;
+  border: none;
+  border-bottom: 2px solid #747474;
+  font-weight: 100;
+  color: #181F22;
+  width: 250px;
+  padding: 0px 0px 0px 10px;
+}
+.tabs-content .application-details .application-details-about .personal-info-and-about-details .personal-info-application .surname-name-div input::-moz-placeholder, .tabs-content .application-details .application-details-about .personal-info-and-about-details .personal-info-application .number-email-div-application input::-moz-placeholder, .tabs-content .application-details .application-details-about .personal-info-and-about-details .personal-info-application .date-time-application input::-moz-placeholder {
+  color: #181F22;
+  font-size: 25px;
+  font-weight: 100;
+  color: #747474;
+  gap: 20px;
+}
+.tabs-content .application-details .application-details-about .personal-info-and-about-details .personal-info-application .surname-name-div input::placeholder, .tabs-content .application-details .application-details-about .personal-info-and-about-details .personal-info-application .number-email-div-application input::placeholder, .tabs-content .application-details .application-details-about .personal-info-and-about-details .personal-info-application .date-time-application input::placeholder {
+  color: #181F22;
+  font-size: 25px;
+  font-weight: 100;
+  color: #747474;
+  gap: 20px;
+}
+.tabs-content .application-details .application-details-about .personal-info-and-about-details .personal-info-application .surname-name-div input:focus, .tabs-content .application-details .application-details-about .personal-info-and-about-details .personal-info-application .number-email-div-application input:focus, .tabs-content .application-details .application-details-about .personal-info-and-about-details .personal-info-application .date-time-application input:focus {
+  outline: #FF914C;
+  border-color: #FF914C;
+}
+.tabs-content .application-details .application-details-about .personal-info-and-about-details .personal-info-application .date-time-application {
+  display: flex;
+  gap: 30px;
+}
+.tabs-content .application-details .application-details-about .personal-info-and-about-details .personal-info-application .date-time-application .div-date, .tabs-content .application-details .application-details-about .personal-info-and-about-details .personal-info-application .date-time-application .div-time {
+  display: flex;
+  gap: 20px;
+}
+.tabs-content .application-details .application-details-about .personal-info-and-about-details .personal-info-application .date-time-application .div-date label, .tabs-content .application-details .application-details-about .personal-info-and-about-details .personal-info-application .date-time-application .div-time label {
+  cursor: pointer;
+}
+.tabs-content .application-details .application-details-about .personal-info-and-about-details .about-details {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 100px;
+}
+.tabs-content .application-details .application-details-about .personal-info-and-about-details .about-details p {
+  width: 100%;
+  font-size: 30px;
+  margin-top: 40px;
+}
+.tabs-content .application-details .application-details-about .personal-info-and-about-details .about-details p span {
+  font-size: 32px;
+  font-weight: 500;
+}
+.tabs-content .application-details .application-details-about .personal-info-and-about-details .about-details p:first-child {
+  margin-top: 30px;
+}
+.tabs-content .application-details .application-details-about .personal-info-and-about-details .about-details .about-details-p {
+  cursor: pointer;
+}
+.tabs-content .application-details .application-details-about .personal-info-and-about-details .about-details .about-details-p:hover {
+  color: #FF914C;
+}
+.tabs-content .viewing-services {
+  display: none;
+}
+.tabs-content .viewing-services .viewing-services-about {
+  padding: 20px;
+}
+.tabs-content .viewing-services .viewing-services-about .services-about {
+  font-size: 32px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #747474;
+  padding: 20px 0px;
 }/*# sourceMappingURL=main.css.map */
