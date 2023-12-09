@@ -1197,12 +1197,12 @@ a:hover {
   font-weight: 500;
   margin-top: 30px;
 }
-.tabs-content .application-details .application-details-about .personal-info-and-about-details .personal-info-application .surname-name-div, .tabs-content .application-details .application-details-about .personal-info-and-about-details .personal-info-application .number-email-div-application, .tabs-content .application-details .application-details-about .personal-info-and-about-details .personal-info-application .date-time-application {
+.tabs-content .application-details .application-details-about .personal-info-and-about-details .personal-info-application .surname-name-div-application, .tabs-content .application-details .application-details-about .personal-info-and-about-details .personal-info-application .number-email-div-application, .tabs-content .application-details .application-details-about .personal-info-and-about-details .personal-info-application .date-time-application {
   margin-top: 50px;
   display: flex;
   justify-content: space-between;
 }
-.tabs-content .application-details .application-details-about .personal-info-and-about-details .personal-info-application .surname-name-div input, .tabs-content .application-details .application-details-about .personal-info-and-about-details .personal-info-application .number-email-div-application input, .tabs-content .application-details .application-details-about .personal-info-and-about-details .personal-info-application .date-time-application input {
+.tabs-content .application-details .application-details-about .personal-info-and-about-details .personal-info-application .surname-name-div-application input, .tabs-content .application-details .application-details-about .personal-info-and-about-details .personal-info-application .number-email-div-application input, .tabs-content .application-details .application-details-about .personal-info-and-about-details .personal-info-application .date-time-application input {
   font-size: 25px;
   border: none;
   border-bottom: 2px solid #747474;
@@ -1211,21 +1211,21 @@ a:hover {
   width: 250px;
   padding: 0px 0px 0px 10px;
 }
-.tabs-content .application-details .application-details-about .personal-info-and-about-details .personal-info-application .surname-name-div input::-moz-placeholder, .tabs-content .application-details .application-details-about .personal-info-and-about-details .personal-info-application .number-email-div-application input::-moz-placeholder, .tabs-content .application-details .application-details-about .personal-info-and-about-details .personal-info-application .date-time-application input::-moz-placeholder {
+.tabs-content .application-details .application-details-about .personal-info-and-about-details .personal-info-application .surname-name-div-application input::-moz-placeholder, .tabs-content .application-details .application-details-about .personal-info-and-about-details .personal-info-application .number-email-div-application input::-moz-placeholder, .tabs-content .application-details .application-details-about .personal-info-and-about-details .personal-info-application .date-time-application input::-moz-placeholder {
   color: #181F22;
   font-size: 25px;
   font-weight: 100;
   color: #747474;
   gap: 20px;
 }
-.tabs-content .application-details .application-details-about .personal-info-and-about-details .personal-info-application .surname-name-div input::placeholder, .tabs-content .application-details .application-details-about .personal-info-and-about-details .personal-info-application .number-email-div-application input::placeholder, .tabs-content .application-details .application-details-about .personal-info-and-about-details .personal-info-application .date-time-application input::placeholder {
+.tabs-content .application-details .application-details-about .personal-info-and-about-details .personal-info-application .surname-name-div-application input::placeholder, .tabs-content .application-details .application-details-about .personal-info-and-about-details .personal-info-application .number-email-div-application input::placeholder, .tabs-content .application-details .application-details-about .personal-info-and-about-details .personal-info-application .date-time-application input::placeholder {
   color: #181F22;
   font-size: 25px;
   font-weight: 100;
   color: #747474;
   gap: 20px;
 }
-.tabs-content .application-details .application-details-about .personal-info-and-about-details .personal-info-application .surname-name-div input:focus, .tabs-content .application-details .application-details-about .personal-info-and-about-details .personal-info-application .number-email-div-application input:focus, .tabs-content .application-details .application-details-about .personal-info-and-about-details .personal-info-application .date-time-application input:focus {
+.tabs-content .application-details .application-details-about .personal-info-and-about-details .personal-info-application .surname-name-div-application input:focus, .tabs-content .application-details .application-details-about .personal-info-and-about-details .personal-info-application .number-email-div-application input:focus, .tabs-content .application-details .application-details-about .personal-info-and-about-details .personal-info-application .date-time-application input:focus {
   outline: #FF914C;
   border-color: #FF914C;
 }
@@ -1275,4 +1275,146 @@ a:hover {
   justify-content: space-between;
   border-bottom: 1px solid #747474;
   padding: 20px 0px;
+}
+
+.btn {
+  font-size: 25px;
+  border: none;
+  font-weight: 100;
+  color: #747474;
+  cursor: pointer;
+}
+.btn:hover {
+  color: #FF914C;
+}
+
+.container .card-service {
+  width: 95vw;
+  margin: 0 auto;
+}
+.container .card-service .type-auto .tytle-and-basket {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+}
+.container .card-service .type-auto .tytle-and-basket .basket {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.container .card-service .type-auto .tytle-and-basket .basket .arrow-basket {
+  display: flex;
+  align-items: end;
+}
+.container .card-service .type-auto .tytle-and-basket .basket .arrow-basket img {
+  width: 30px;
+}
+.container .card-service .type-auto .img-auto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 8vh 0;
+}
+.container .card-service .type-auto .img-auto img {
+  width: 80vw;
+}
+.container .card-service .type-auto .btn-chanje-auto {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.container .card-service .type-auto .btn-chanje-auto .arrow-auto {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.container .card-service .type-auto .btn-chanje-auto .arrow-auto .prew-auto {
+  margin-right: 20px;
+  cursor: pointer;
+}
+.container .card-service .type-auto .btn-chanje-auto .arrow-auto .next-auto {
+  margin-left: 20px;
+  margin-right: 22vw;
+  cursor: pointer;
+}
+.container .card-service .type-auto .btn-chanje-auto .btn-next button {
+  display: flex;
+  align-items: center;
+  padding: 15px 50px 15px 120px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.container .card-service .type-auto .btn-chanje-auto .btn-next button p {
+  font-size: 25px;
+  font-weight: 100;
+  margin-right: 60px;
+}
+.container .card-service .type-auto .btn-chanje-auto .btn-next button img {
+  width: 20px;
+  color: #747474;
+}
+.container .card-service .type-auto .btn-chanje-auto .btn-next button:hover {
+  background-color: #FF914C;
+  color: #ffffff;
+}
+.container .card-service .type-auto .btn-chanje-auto img {
+  width: 40px;
+}
+.container .card-service .type-auto .services {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  overflow-x: auto;
+  max-width: 98vw;
+  scroll-snap-type: x;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  overflow-x: hidden;
+}
+.container .card-service .type-auto .services::--webkit-scrollbar {
+  display: none;
+}
+.container .card-service .type-auto .services .service-card {
+  border: 1px solid #747474;
+  border-radius: 20px;
+  min-width: calc(31.5% - 0.5rem);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px;
+  scroll-snap-align: start;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.container .card-service .type-auto .services .service-card .title-service-card {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  width: 100%;
+  padding-left: 20px;
+  border-bottom: 1px solid #747474;
+}
+.container .card-service .type-auto .services .service-card img {
+  margin-top: 20px;
+  width: 20vw;
+  pointer-events: none;
+}
+.container .card-service .type-auto .services .service-card img::-moz-selection {
+  background: transparent;
+}
+.container .card-service .type-auto .services .service-card img::selection {
+  background: transparent;
+}
+.container .card-service .type-auto .services .service-card:hover {
+  background-color: #62FAA9;
+}
+.container .card-service .type-auto .services .service-card.active {
+  background-color: #62FAA9;
+}
+.container .card-service .type-auto .choosing-services-specific .choosing-services-specific-block .choosing-services-specific-card {
+  display: none;
+}
+.container .card-service .type-auto .choosing-services-specific .choosing-services-specific-block .choosing-services-specific-card.active {
+  background-color: #62FAA9;
 }/*# sourceMappingURL=main.css.map */

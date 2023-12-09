@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <div class="main-scrin-header-white">
+        <div class="main-container">
+          <header class="header-main">
+            <div class="logo"><a href="#">Virtusos</a></div>
+            <nav class="menu">
+              <li><a href="#">Услуги</a></li>
+              <li><a href="#">Акции</a></li>
+              <li><a href="#">Отзывы</a></li>
+              <li><a href="#">Контакты</a></li>
+            </nav>
+            <button class="btn">Личный кабинет</button>
+          </header>
+        </div>
+      </div>
+      <div class="container">
+        <div class="card-service">
+            <div class="type-auto active-type-auto">
+                <div class="tytle-and-basket">
+                    <p class="tytle-auto">Средний класс</p>
+                    <div class="basket">
+                        <p>25700 <span>Р</span></p>
+                        <div class="arrow-basket">
+                            <img src="./icons/список выбранных услуг.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="img-auto">
+                    <img src="./img/средний-акт.png" alt="">
+                </div>
+                <div class="btn-chanje-auto">
+                    <div class="arrow-auto">
+                        <div class="prew-auto" onclick="plusSlidesServices(-1)"><img src="./icons/назад.png" alt=""></div>
+                        <div class="next-auto" onclick="plusSlidesServices(1)"><img src="./icons/вперёд.png" alt=""></div>
+                    </div>
+                    <div class="btn-next">
+                        <button>
+                            <p>Далее</p>
+                            <img src="./icons/стрелка.png" alt="">
+                        </button>
+                    </div>
+                </div>
+                <div class="services average-services">
+                    <div class="service-card" data-id="average-key">
+                        <div class="title-service-card">
+                            <p>Ключи</p>
+                        </div>
+                        <img src="./img/ключи.png" alt="">
+                    </div>
+                    <div class="service-card" data-id="average-engin">
+                        <div class="title-service-card">
+                            <p>Двигатель</p>
+                        </div>
+                        <img src="./img/двигатель.png" alt="">
+                    </div>
+                    <div class="service-card" data-id="average-tire-service">
+                        <div class="title-service-card">
+                            <p>Шиномонтаж</p>
+                        </div>
+                        <img src="./img/шиномонтаж.png" alt="">
+                    </div>
+                    <div class="service-card" data-id="average-fuel-system">
+                        <div class="title-service-card">
+                            <p>Топливная система</p>
+                        </div>
+                        <img src="./img/топливная система.png" alt="">
+                    </div>
+                    <div class="service-card" data-id="average-pendant">
+                        <div class="title-service-card">
+                            <p>Подвеска</p>
+                        </div>
+                        <img src="./img/подвески.png" alt="">
+                    </div>
+                    <div class="service-card" data-id="average-braking-system">
+                        <div class="title-service-card">
+                            <p>Тормозная система</p>
+                        </div>
+                        <img src="./img/тормозная система.png" alt="">
+                    </div>
+                </div>
+                <div class="choosing-services-specific">
+                    <div class="choosing-services-specific-block">
+
+                        <div class="choosing-services-specific-card average-key">
+                            <div class="title-choosing-services-specific-card">
+                                <p>ключи1</p>
+                            </div>
+                        </div>
+
+                        <div class="choosing-services-specific-card average-key">
+                            <div class="title-choosing-services-specific-card">
+                                <p>ключи2</p>
+                            </div>
+                        </div>
+
+                        <div class="choosing-services-specific-card average-key">
+                            <div class="title-choosing-services-specific-card">
+                                <p>ключи3</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="choosing-services-specific-block">
+
+                        <div class="choosing-services-specific-card average-engin">
+                            <div class="title-choosing-services-specific-card">
+                                <p>двигатель1</p>
+                            </div>
+                        </div>
+
+                        <div class="choosing-services-specific-card average-engin">
+                            <div class="title-choosing-services-specific-card">
+                                <p>двигатель2</p>
+                            </div>
+                        </div>
+
+                        <div class="choosing-services-specific-card average-engin">
+                            <div class="title-choosing-services-specific-card">
+                                <p>двигатель3</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="choosing-services-specific-block">
+
+                        <div class="choosing-services-specific-card average-tire-service">
+                            <div class="title-choosing-services-specific-card">
+                                <p>Шиномонтаж1</p>
+                            </div>
+                        </div>
+
+                        <div class="choosing-services-specific-card average-tire-service">
+                            <div class="title-choosing-services-specific-card">
+                                <p>Шиномонтаж2</p>
+                            </div>
+                        </div>
+
+                        <div class="choosing-services-specific-card average-tire-service">
+                            <div class="title-choosing-services-specific-card">
+                                <p>Шиномонтаж3</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="choosing-services-specific-block">
+
+                        <div class="choosing-services-specific-card average-fuel-system">
+                            <div class="title-choosing-services-specific-card">
+                                <p>Топливная система1</p>
+                            </div>
+                        </div>
+
+                        <div class="choosing-services-specific-card average-fuel-system">
+                            <div class="title-choosing-services-specific-card">
+                                <p>Топливная система2</p>
+                            </div>
+                        </div>
+
+                        <div class="choosing-services-specific-card average-fuel-system">
+                            <div class="title-choosing-services-specific-card">
+                                <p>Топливная система3</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="choosing-services-specific-block">
+
+                        <div class="choosing-services-specific-card average-pendant">
+                            <div class="title-choosing-services-specific-card">
+                                <p>Подвеска1</p>
+                            </div>
+                        </div>
+
+                        <div class="choosing-services-specific-card average-pendant">
+                            <div class="title-choosing-services-specific-card">
+                                <p>Подвеска2</p>
+                            </div>
+                        </div>
+
+                        <div class="choosing-services-specific-card average-pendant">
+                            <div class="title-choosing-services-specific-card">
+                                <p>Подвеска3</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="choosing-services-specific-block">
+
+                        <div class="choosing-services-specific-card average-braking-system">
+                            <div class="title-choosing-services-specific-card">
+                                <p>Тормозная система1</p>
+                            </div>
+                        </div>
+
+                        <div class="choosing-services-specific-card average-braking-system">
+                            <div class="title-choosing-services-specific-card">
+                                <p>Тормозная система2</p>
+                            </div>
+                        </div>
+
+                        <div class="choosing-services-specific-card average-braking-system">
+                            <div class="title-choosing-services-specific-card">
+                                <p>Тормозная система3</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="type-auto active-type-auto">
+                <div class="tytle-and-basket">
+                    <p class="tytle-auto">Бизнес класс</p>
+                    <div class="basket">
+                        <p>25700 <span>Р</span></p>
+                        <div class="arrow-basket">
+                            <img src="./icons/список выбранных услуг.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="img-auto">
+                    <img src="./img/бизнес-акт.png" alt="">
+                </div>
+                <div class="btn-chanje-auto">
+                    <div class="arrow-auto">
+                        <div class="prew-auto" onclick="plusSlidesServices(-1)"><img src="./icons/назад.png" alt=""></div>
+                        <div class="next-auto" onclick="plusSlidesServices(1)"><img src="./icons/вперёд.png" alt=""></div>
+                    </div>
+                    <div class="btn-next">
+                        <button>
+                            <p>Далее</p>
+                            <img src="./icons/стрелка.png" alt="">
+                        </button>
+                    </div>
+                </div>
+                <div class="services business-services">
+                    <div class="service-card" data-id="business-key">
+                        <div class="title-service-card">
+                            <p>Ключи</p>
+                        </div>
+                        <img src="./img/ключи.png" alt="">
+                    </div>
+                    <div class="service-card" data-id="business-engin">
+                        <div class="title-service-card">
+                            <p>Двигатель</p>
+                        </div>
+                        <img src="./img/двигатель.png" alt="">
+                    </div>
+                    <div class="service-card" data-id="business-tire-service">
+                        <div class="title-service-card">
+                            <p>Шиномонтаж</p>
+                        </div>
+                        <img src="./img/шиномонтаж.png" alt="">
+                    </div>
+                    <div class="service-card" data-id="business-fuel-system">
+                        <div class="title-service-card">
+                            <p>Топливная система</p>
+                        </div>
+                        <img src="./img/топливная система.png" alt="">
+                    </div>
+                    <div class="service-card" data-id="business-pendant">
+                        <div class="title-service-card">
+                            <p>Подвеска</p>
+                        </div>
+                        <img src="./img/подвески.png" alt="">
+                    </div>
+                    <div class="service-card" data-id="business-braking-system">
+                        <div class="title-service-card">
+                            <p>Тормозная система</p>
+                        </div>
+                        <img src="./img/тормозная система.png" alt="">
+                    </div>
+                </div>
+                <div class="choosing-services-specific">
+
+                    <div class="choosing-services-specific-block">
+
+                        <div class="choosing-services-specific-card business-key">
+                            <div class="title-choosing-services-specific-card">
+                                <p>ключи4</p>
+                            </div>
+                        </div>
+
+                        <div class="choosing-services-specific-card business-key">
+                            <div class="title-choosing-services-specific-card">
+                                <p>ключи5</p>
+                            </div>
+                        </div>
+
+                        <div class="choosing-services-specific-card business-key">
+                            <div class="title-choosing-services-specific-card">
+                                <p>ключи6</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="choosing-services-specific-block">
+
+                        <div class="choosing-services-specific-card business-engin">
+                            <div class="title-choosing-services-specific-card">
+                                <p>двигатель4</p>
+                            </div>
+                        </div>
+
+                        <div class="choosing-services-specific-card business-engin">
+                            <div class="title-choosing-services-specific-card">
+                                <p>двигатель5</p>
+                            </div>
+                        </div>
+
+                        <div class="choosing-services-specific-card business-engin">
+                            <div class="title-choosing-services-specific-card">
+                                <p>двигатель6</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="choosing-services-specific-block">
+
+                        <div class="choosing-services-specific-card business-tire-service">
+                            <div class="title-choosing-services-specific-card">
+                                <p>Шиномонтаж4</p>
+                            </div>
+                        </div>
+
+                        <div class="choosing-services-specific-card business-tire-service">
+                            <div class="title-choosing-services-specific-card">
+                                <p>Шиномонтаж5</p>
+                            </div>
+                        </div>
+
+                        <div class="choosing-services-specific-card business-tire-service">
+                            <div class="title-choosing-services-specific-card">
+                                <p>Шиномонтаж6</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="choosing-services-specific-block">
+
+                        <div class="choosing-services-specific-card business-fuel-system">
+                            <div class="title-choosing-services-specific-card">
+                                <p>Топливная система4</p>
+                            </div>
+                        </div>
+
+                        <div class="choosing-services-specific-card business-fuel-system">
+                            <div class="title-choosing-services-specific-card">
+                                <p>Топливная система5</p>
+                            </div>
+                        </div>
+
+                        <div class="choosing-services-specific-card business-fuel-system">
+                            <div class="title-choosing-services-specific-card">
+                                <p>Топливная система6</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="choosing-services-specific-block">
+
+                        <div class="choosing-services-specific-card business-pendant">
+                            <div class="title-choosing-services-specific-card">
+                                <p>Подвеска4</p>
+                            </div>
+                        </div>
+
+                        <div class="choosing-services-specific-card business-pendant">
+                            <div class="title-choosing-services-specific-card">
+                                <p>Подвеска5</p>
+                            </div>
+                        </div>
+
+                        <div class="choosing-services-specific-card business-pendant">
+                            <div class="title-choosing-services-specific-card">
+                                <p>Подвеска6</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="choosing-services-specific-block">
+
+                        <div class="choosing-services-specific-card business-braking-system">
+                            <div class="title-choosing-services-specific-card">
+                                <p>Тормозная система4</p>
+                            </div>
+                        </div>
+
+                        <div class="choosing-services-specific-card business-braking-system">
+                            <div class="title-choosing-services-specific-card">
+                                <p>Тормозная система5</p>
+                            </div>
+                        </div>
+
+                        <div class="choosing-services-specific-card business-braking-system">
+                            <div class="title-choosing-services-specific-card">
+                                <p>Тормозная система6<p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+      </div>
+      <script src="./js/slider-services.js"></script>
+      <script src="./js/slider-chosing-services.js"></script>
+      <script src="./js/filter-services-average.js"></script>
+      <script src="./js/add-active-backgraund-services-card.js"></script>
+      <script src="./js/reset-item.js"></script>
+</body>
+</html>

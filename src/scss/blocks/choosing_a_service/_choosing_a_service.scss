@@ -1,0 +1,149 @@
+.btn{
+    font-size: $paragraph;
+    border: none;
+    font-weight: 100;
+    color: $dark-gray;
+    cursor: pointer;
+    &:hover{
+        color: $orange;
+    }
+}
+
+.container {
+    .card-service {
+        width: 95vw;
+        margin: 0 auto;
+        .type-auto {
+            .tytle-and-basket {
+                display: flex;
+                justify-content: space-between;
+                font-weight: 500;
+                .tytle-auto {
+                }
+                .basket {
+                    display: flex;
+                    flex-wrap: nowrap;
+                    .arrow-basket{
+                        display: flex;
+                        align-items: end;
+                        img{
+                            width: 30px;
+                        }
+                    }
+                }
+            }
+            .img-auto {
+                display: flex;
+                align-items: center;
+                justify-content: center; 
+                margin: 8vh 0;
+                img{
+                    width: 80vw;
+                }
+            }
+            .btn-chanje-auto {
+                display: flex;
+                justify-content: end;
+                align-items: center;
+                .arrow-auto{
+                    display: flex;
+                    flex-wrap: nowrap;
+                    .prew-auto{
+                        margin-right: 20px;
+                        cursor: pointer;
+                    }
+                    .next-auto{
+                        margin-left: 20px;
+                        margin-right: 22vw;
+                        cursor: pointer;
+                    }
+                }
+                .btn-next{
+                    button{
+                            display: flex;
+                            align-items: center;
+                            padding: 15px 50px 15px 120px;
+                            background-color: $white;
+                            border: none;
+                            border-radius: 20px;
+                            cursor: pointer;
+                            p{
+                                font-size: $paragraph;
+                                font-weight: 100;
+                                margin-right: 60px;
+                            }
+                            img{
+                                width: 20px;
+                                color: $dark-gray;
+                            }
+                            &:hover{
+                                background-color: $orange;
+                                color: $white;
+                            }
+                    }
+                }
+                img{
+                    width: 40px;
+                }
+            }
+            .services {
+                display: flex;
+                justify-content: space-between;
+                gap: 20px;
+                overflow-x: auto;
+                max-width: 98vw;
+                scroll-snap-type: x;
+                scroll-behavior: smooth;
+                scrollbar-width: none;
+                overflow-x: hidden;
+                &::--webkit-scrollbar{
+                    display: none;
+                }
+                .service-card{
+                    border: 1px solid $dark-gray;
+                    border-radius: 20px;
+                    min-width: calc(31.5% - .5rem);
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    margin: 10px;
+                    scroll-snap-align: start;
+                    user-select: none;
+                    .title-service-card{
+                        display: flex;
+                        align-items: start;
+                        justify-content: start;
+                        width: 100%;
+                        padding-left: 20px;
+                        border-bottom: 1px solid $dark-gray;
+                    }
+                    img{
+                        margin-top: 20px;
+                        width: 20vw;
+                        pointer-events: none;
+                    }
+                    img::selection {
+                        background: transparent;
+                    }
+                    &:hover{
+                        background-color: $mint;
+                    }
+                    
+                }   
+                .service-card.active{
+                    background-color: $mint;
+                }
+            }
+            .choosing-services-specific {
+                .choosing-services-specific-block {
+                    .choosing-services-specific-card {
+                        display: none;
+                    }
+                    .choosing-services-specific-card.active {
+                        background-color: $mint;
+                    }
+                }
+            }
+        }
+    }
+}
