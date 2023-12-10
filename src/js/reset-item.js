@@ -6,6 +6,6 @@ nextButton.addEventListener('click', resetItems);
 
 function resetItems() {
     items.forEach(item => {
-        item.style.display = 'none'; // Или установите значение по умолчанию в зависимости от ваших требований
+        item.style.display = 'none'; 
     });
 }

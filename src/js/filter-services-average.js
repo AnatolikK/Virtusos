@@ -7,6 +7,9 @@ function filter(){
             const targetId = event.target.dataset.id;
             console.log(targetId);
             getItems(targetId);
+
+            // Прокрутка вниз после клика
+            scrollToBottom();
         });
     });
 
@@ -15,7 +18,6 @@ function filter(){
 }
 
 filter();
-
 
 function getItems(className){
     items.forEach(item => {
@@ -26,4 +28,12 @@ function getItems(className){
             item.style.display = 'none';
         }
     });
-};
+}
+
+function scrollToBottom() {
+    // Либо используйте чистый JavaScript
+    window.scrollTo(0, document.body.scrollHeight);
+
+    // Либо используйте jQuery
+    // $('html, body').animate({scrollTop: $(document).height()}, 'slow');
+}

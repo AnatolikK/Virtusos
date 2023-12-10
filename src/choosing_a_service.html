@@ -42,7 +42,7 @@
                         <div class="next-auto" onclick="plusSlidesServices(1)"><img src="./icons/вперёд.png" alt=""></div>
                     </div>
                     <div class="btn-next">
-                        <button>
+                        <button class="next-viewing-application">
                             <p>Далее</p>
                             <img src="./icons/стрелка.png" alt="">
                         </button>
@@ -420,12 +420,87 @@
                 </div>
             </div>
             </div>
+            <div class="tabs-service">
+                <div class="tabs-service-container">
+                    <div class="tabs-service-nav">
+                        <button class="tabs-service-nav-btn" type="button" data-tab="#tav_service_1">Заявки</button>
+                    </div>
+                    <div class="tabs-service-content">
+                        <div class="tabs-service-item" id="tav_service_1">
+                            <div class="application-details-service">
+                                <div class="application-details-about-service">
+                                  <div class="number-application-service">
+                                    <p>Заявка № <span>169 144 208</span></p>
+                                  </div>
+                                  <div class="personal-info-and-about-details-service">
+                                      <div class="personal-info-application-service">
+                                          <p>Персональная информация</p>
+                                          <div class="surname-name-div-application-service">
+                                            <input type="text" class="name-application-service" placeholder="Имя"></input>
+                                            <input type="text" class="surname-application-service" placeholder="Фамилия"></input>
+                                          </div>
+                                          <div class="number-email-div-application-service">
+                                            <input type="tel" class="telephon-number-application-service" placeholder="Номер телефона"></input>
+                                            <input type="email" class="email-application-service" placeholder="Email"></input>
+                                          </div>
+                                          <p class="date-and-time-service">Дата и время</p>
+                                          <div class="date-time-application-service">
+                                            <div class="div-date-service">
+                                              <label for="date-application-service"><img src="./icons/Календарь.png" alt=""></label>
+                                              <input type="date" class="date-application-service" id="date-application-service" placeholder="ДД.ММ.ГГ"></input>
+                                            </div>
+                                            <div class="div-time-service">
+                                              <label for="time-application-service"><img src="./icons/время.png" alt=""></label>
+                                              <input type="time" class="time-application-service" id="time-application-service" placeholder="ЧЧ.ММ"></input>
+                                            </div>
+                                          </div>
+                                      </div>
+                                      <div class="about-details-service">
+                                        <p><span>Статус: </span>Оформление заявки</p>
+                                        <p><span>Тип авто: </span>Средний класс</p>
+                                        <p><span>Общая сумма: </span>34568 <span class="valute-service">Р</span></p>
+                                        <p class="about-details-p-service"><span>Все выбранные услуги: </span>Подробнее</p>
+                                        <button class="about-details-service-btn">Создавть заявку</button>
+                                      </div>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="viewing-more-services">
+                    <div class="viewing-more-services-about">
+                        <div class="more-services-about">
+                            <p>Перебор двигателя</p>
+                            <p>15000<span>Р</span></p>
+                        </div>
+                        <div class="more-services-about">
+                            <p>Починить катушку</p>
+                            <p>1000<span>Р</span></p>
+                        </div>
+                        <div class="more-services-about">
+                            <p>Поменять колеса</p>
+                            <p>22000<span>Р</span></p>
+                        </div>
+                        <div class="more-services-about">
+                            <p>Перепрошить чип</p>
+                            <p>35000<span>Р</span></p>
+                        </div>
+                        <div class="more-services-about">
+                            <p>Отремонтировать подвеску</p>
+                            <p>30000<span>Р</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
         </div>
-      </div>
-      <script src="./js/slider-services.js"></script>
       <script src="./js/slider-chosing-services.js"></script>
-      <script src="./js/filter-services-average.js"></script>
       <script src="./js/add-active-backgraund-services-card.js"></script>
       <script src="./js/reset-item.js"></script>
-</body>
+      <script src="./js/slider-services.js"></script>
+      <script src="./js/filter-services-average.js"></script>
+      <script src="./js/viewing-card-service.js"></script>
+      <script src="./js/viewing-more-services.js"></script>
+</body>  
 </html>
