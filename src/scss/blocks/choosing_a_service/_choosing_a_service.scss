@@ -20,7 +20,7 @@
                 font-weight: 500;
                 .tytle-auto {
                 }
-                .basket {
+                .header-cart {
                     display: flex;
                     flex-wrap: nowrap;
                     .arrow-basket{
@@ -31,6 +31,138 @@
                         }
                     }
                 }
+                .cart{
+                    position: relative;
+                    transition: color 0.3s;
+                    .cart-text{
+                        margin-right: 20px;
+                        .cart-quantity{
+                            margin-top: -10px;
+                            position: absolute;
+                            right: 2px;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            color: $white;
+                            background-color: #de707b;
+                            border-radius: 100%;
+                            padding: 3px;
+                            min-height: 16px;
+                            min-width: 16px;
+                            display: inline-flex;
+                            align-items: center;
+                            justify-content: center;
+                            font-size: 12px;
+                            line-height: 1;
+                        }
+                        
+                    }
+                    .cart-content{
+                        cursor: default;
+                        position: absolute;
+                        right: 0;
+                        top: 100%;
+                        width: 490px;
+                        background-color: $white;
+                        box-shadow: 0px 4px 4px rgba(135, 135, 135, 0.25);
+                        opacity: 0;
+                        visibility: hidden;
+                        transition: opacity 0.3s, visibility 0.3s;
+
+                        .cart-content-list{
+                            max-height: 330px;
+
+                            .cart-content-item{
+
+                                .cart-product{
+                                    display: flex;
+                                    align-items: center;
+                                    padding: 12px 20px;
+
+                                    .cart-product-img{
+                                        max-width: 120px;
+                                        max-height: 100px;
+                                        object-fit: cover;
+                                        margin-right: 20px;
+                                    }
+                                    .cart-product-text{
+                                        margin-top: 15px;
+                                        color: $dark;
+                                        .cart-product-title{
+                                            max-width: 280px;
+                                            font-size: $paragraph;
+                                            font-weight: 300;
+                                        }
+                                        .cart-prroduct-price{
+                                            font-size: $subtitle;
+                                            font-weight: 300;
+                                        }
+                                        &.active{
+                                            color: $dark;
+                                        }
+                                    }
+                                    
+                                    .cart-product-delete{
+                                        margin-left: auto;
+                                        width: 30px;
+                                        height: 40px;
+                                        border: none;
+                                        background-color: transparent;
+                                        padding: 0;
+                                        background-image: url('/src/icons/trash.png');
+                                        background-size: cover;
+                                        background-position: center;
+                                        background-repeat: no-repeat;
+                                    }
+                                    transition: background-color 0.3s;
+                                    &:hover{
+                                        background-color: rgba(77, 77, 77, 0.2);
+                                    }
+                                }
+                            }
+                        }
+                        .cart-content-bottom{
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            padding: 20px;
+                            .cart-content-full-price{
+                                display: flex;
+                                flex-direction: column;
+                                span{
+                                    font-weight: 300;
+                                }
+                                .fullprice{
+                                    font-weight: 400;
+                                    
+                                }
+                                
+                            }
+                            .cart-content-btn{
+                                margin-top: auto;
+                                width: 250px;
+                                min-height: 60px;
+                                font-size: 18px;
+                                border: none;
+                                background-color: $orange;
+                                color: $white;
+                                border-radius: 20px;
+                                cursor: pointer;
+                            }
+                            
+                        }
+                    }
+                    &.active:hover{
+                        color: $dark;
+
+                        .cart-content{
+                            opacity: 1;
+                            visibility: visible;
+                            transition: opacity 0.3s, visibility 0.3s;
+                        }
+                    }
+
+                }
+                
             }
             .img-auto {
                 display: flex;
@@ -135,9 +267,38 @@
                 }
             }
             .choosing-services-specific {
+                margin-bottom: 20px;
                 .choosing-services-specific-block {
+                    display: flex;
+                    justify-content: space-between;
                     .choosing-services-specific-card {
+                        border: 1px solid $dark;
+                        width: 29vw;
                         display: none;
+                        border-radius: 20px;
+                        
+                        .title-choosing-services-specific-card{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            flex-direction: column;
+                            .btn-choosing-services-specific-card{
+                                margin-top: 20px;
+                                width: 70%;
+                                border: none;
+                                border-radius: 20px;
+                                font-size: $paragraph;
+                                background-color: $orange;
+                                color: $white;
+                                height: 50px;
+                                margin-bottom: 20px;
+                                cursor: pointer;
+                                &:disabled{
+                                    opacity: 0.4;
+                                    pointer-events: none;
+                                }
+                            }
+                        }
                     }
                     .choosing-services-specific-card.active {
                         background-color: $mint;
