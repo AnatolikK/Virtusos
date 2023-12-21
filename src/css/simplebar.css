@@ -231,3 +231,19 @@
   right: 0;
   left: 0;
 }
+
+.viewing-services {
+  display: none;
+}
+
+.viewing-services-about {
+  padding: 20px;
+}
+
+.services-about {
+  font-size: 32px; /* Подставьте значение $subtitle */
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #747474; /* Подставьте значение $dark-gray */
+  padding: 20px 0px;
+}

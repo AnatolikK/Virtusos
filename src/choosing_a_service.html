@@ -10,14 +10,17 @@
     <div class="main-scrin-header-white">
         <div class="main-container">
           <header class="header-main">
-            <div class="logo"><a href="#">Virtusos</a></div>
+            <div class="logo"><a href="index.html">Virtusos</a></div>
             <nav class="menu">
-              <li><a href="#">Услуги</a></li>
-              <li><a href="#">Акции</a></li>
-              <li><a href="#">Отзывы</a></li>
-              <li><a href="#">Контакты</a></li>
+              <li><a href="index.html#services">Услуги</a></li>
+              <li><a href="index.html#container-about">Акции</a></li>
+              <li><a href="index.html#container-reviews">Отзывы</a></li>
+              <li><a href="index.html#section-contact">Контакты</a></li>
             </nav>
-            <button class="btn">Личный кабинет</button>
+            <a href="personal_account.html">
+                <button class="btn">Личный кабинет</button>
+            </a>
+                
           </header>
         </div>
       </div>
@@ -52,6 +55,12 @@
                                     <span class="fullprice">888 888 Р</span>
                                 </div>
                                 <button class="cart-content-btn">Перейти к оформлению</button>
+                            </div>
+                            <div class="modalWindow" id="myModalWindow">
+                                <div class="modal-content">
+                                    <span class="close" onclick="closeModal()">&times;</span>
+                                    <p>Ваша заявка в рассмотрении</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -580,5 +589,6 @@
       <script src="./js/filter-services-average.js"></script>
       <script src="./js/viewing-card-service.js"></script>
       <script src="./js/viewing-more-services.js"></script>
+      <script src="./js/modalWindow.js"></script>
 </body>  
 </html>
